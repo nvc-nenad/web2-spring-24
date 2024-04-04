@@ -1,0 +1,33 @@
+@use "./vendor/normalize";
+@use "./partials/colors";
+
+.navigation {
+  background-color: colors.$primary-color;
+  padding: 15px;
+  nav {
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: colors.$hover-color;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  background-color: colors.$primary-color;
+  color: white;
+}
+
+
+.footer {
+  background-color: colors.$dark-background;
+}
+
+// big screens
+@media (min-width: 1024px) {
+  .navigation {
+    background-color: navy;
+  }
+} 
